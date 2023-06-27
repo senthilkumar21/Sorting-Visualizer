@@ -96,3 +96,15 @@ input[type="button"], button{
 	color: rgb(6, 6, 223);
 	font-size: 1.2vw;
 }
+
+footer {
+	background-color: #f1f1f1;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  footer p {
+	font-size: 25px;
+	color: #e50f93;
+  }
+  
