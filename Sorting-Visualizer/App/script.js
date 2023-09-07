@@ -56,13 +56,11 @@ function Sleep(ms) {
 function MapRange(value, in_min, in_max, out_min, out_max) {
 	return (value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
-//=============================== Sorting Algorithms ==================================//
 
 
-// 1
-// SELECTION SORT
 
-// SelectionSort() : Implementation of selection sort algorithm. O(n^2)
+
+// SELECTION SORT O(n^2)
 async function SelectionSort() {
 	let delay = Disable_The_Input();
 
@@ -104,10 +102,7 @@ async function SelectionSort() {
 
 
 
-// 2
-// BUBBLE SORT
-
-// BubbleSort() : Implementation of bubble sort algorithm. O(n^2)
+// BUBBLE SORT O(n^2)
 async function BubbleSort() {
 	let delay = Disable_The_Input();
 	let container = document.getElementById("container");
@@ -149,10 +144,8 @@ async function BubbleSort() {
 
 
 
-// 3
-// INSERTION SORT
 
-// InsertionSort() : Implementation of inserion sort algorithm. O(n^2)
+// INSERTION SORT O(n^2)
 async function InsertionSort() {
 	let delay = Disable_The_Input();
 	let container = document.getElementById("container");
@@ -186,9 +179,7 @@ async function InsertionSort() {
 
 
 
-// 4
 // MERGE SORT
-// Slide_down() : Places bars[r] at lth position by sliding other bars to the right.
 function Slide_down(l, r) {
 	let temp = bars[r];
 	for (let i = r - 1; i >= l; i--) {
@@ -250,9 +241,7 @@ async function MergeSort() {
 
 
 
-// 5
 // QUICK SORT
-// Partition(): Places the (r)th bar at the correct position
 async function Partition(l, r, d) {
 	let i = l - 1;
 	let j = l;
@@ -315,13 +304,11 @@ async function QuickSort() {
 
 
 
-// 6
 // HEAP SORT
-// Heapfiy(): Creates a max heap.
 async function Heapfiy(n, i, d) {
 	let largest = i;
-	let l = 2 * i + 1; // lft
-	let r = 2 * i + 2; // rgt
+	let l = 2 * i + 1; 
+	let r = 2 * i + 2; 
 	let curr_id = bars[i].split('id="')[1].split('"')[0];
 	let nxt_ele;
 	let id3;
